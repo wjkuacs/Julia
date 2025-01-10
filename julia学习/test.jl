@@ -11,8 +11,8 @@ t_span = (0.0 , 1.0)
 prob = ODEProblem(f, u_0, t_span)
 # 解决问题，使用solve函数
 sol = solve(prob, BS3(),reltol = 1e-8)
-plot(sol)
-plot!(sol.t,t->0.5 * exp(1.01 * t))
+plot(sol, linewidth = 5, title = "Solution to the linear ODE with a thick line",xaxis = "Time (t)", yaxis = "u(t) (in μm)", label = "My Thick Line!") # legend=false
+plot!(sol.t, t -> 0.5 * exp(1.01t), lw = 3, ls = :dash, label = "True Solution!")
 
 sol[5]
 
