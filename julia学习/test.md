@@ -1,5 +1,5 @@
 ---
-# title：DifferentialEquations.jl包
+# DifferentialEquations.jl包
 ---
 今天我们来简单的介绍一下 `Julia` 语言当中比较常用的包 `DifferentialEquations.jl`，这个包在我们求解微分方程的数值解中可以做到非常完美的求解，并给出图像。
 
